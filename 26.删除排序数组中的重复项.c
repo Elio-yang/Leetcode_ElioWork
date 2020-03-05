@@ -11,7 +11,9 @@ int removeDuplicates(int* nums, int numsSize){
     if(nums==NULL||numsSize==0){
         return 0;
     }//注意判空
-    int i=j=0;
+    int j;
+    int i;
+    i=j=0;//双指针法
     for(j=0;j<numsSize;j++){
         if(nums[i]!=nums[j]){
             i++;//移动慢指针
