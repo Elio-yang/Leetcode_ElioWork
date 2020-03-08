@@ -13,8 +13,8 @@ int removeDuplicates(int* nums, int numsSize){
     }//注意判空
     int j;
     int i;
-    i=j=0;//双指针法
-    for(j=0;j<numsSize;j++){
+    i=0;//双指针法
+    for(j=1;j<numsSize;j++){
         if(nums[i]!=nums[j]){
             i++;//移动慢指针
             nums[i]=nums[j];
