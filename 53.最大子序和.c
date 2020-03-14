@@ -7,7 +7,7 @@
 // @lc code=start
 
 int maxSubArray(int* nums, int numsSize){
-   int ans=INT_MIN;
+   int ans=0;
    int* dp=(int*)malloc(sizeof(int)*numsSize);
    dp[0]=nums[0];
    ans=nums[0];
